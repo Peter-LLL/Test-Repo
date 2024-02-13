@@ -2,8 +2,30 @@ body {
     background-color: antiquewhite;
 }
 
+@keyframes slide-down {
+  100% {margin-top: 0px;}
+}
+
+h1 {
+  text-align: center;
+  margin-top: -50px;
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+@keyframes fade {
+  100% {opacity: 1;}
+}
+
 p {
+    opacity: 0;
     color: rebeccapurple;
     text-align: right;
     text-shadow: 20px 200px 10px black;
+    animation-name: fade;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
 }
